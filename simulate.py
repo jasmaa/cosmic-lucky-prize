@@ -58,12 +58,12 @@ class ColdFeetAgent(Agent):
 
 class ReachForTheStarsAgent(Agent):
     def decide_should_gamble(self):
-        return not env.find_is_already_superstar(self.id)
+        return not self.env.find_is_already_superstar(self.id)
 
 
 class FirstPrizeEnjoyerAgent(Agent):
     def decide_should_gamble(self):
-        return not env.find_is_already_first_prize_winner(self.id)
+        return not self.env.find_is_already_first_prize_winner(self.id)
 
 
 class LatecomerAgent(Agent):
